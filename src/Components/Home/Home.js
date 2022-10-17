@@ -12,7 +12,7 @@ const Home = () => {
     
     return (
         <div>
-            <h3 className='home mt-10 text-2xl font-semibold'>Welcome to the educational web-site. {topics.data.length} </h3>
+            <h3 className=' mt-10 text-2xl font-semibold'>Welcome to the educational web-site. {topics.data.length} </h3>
             <div className='quiz-topic mt-10 flex justify-between'>
                 {
                     topics.data.map(topic => <QuizTopic
