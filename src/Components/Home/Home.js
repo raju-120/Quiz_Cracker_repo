@@ -11,8 +11,8 @@ const Home = () => {
     }
     
     return (
-        <div>
-            <h3 className=' mt-10 text-2xl font-semibold'>Welcome to the educational web-site. {topics.data.length} </h3>
+        <div className='bg-slate-600 rounded-md'>
+            <h3 className=' p-5 text-2xl font-semibold text-white'>Welcome to the educational web-site. {topics.data.length} </h3>
             <div className='quiz-topic mt-10 flex justify-between'>
                 {
                     topics.data.map(topic => <QuizTopic

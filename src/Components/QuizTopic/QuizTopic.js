@@ -10,7 +10,7 @@ const QuizTopic = ({topic,handleQuiz}) => {
             <img className='border-2 border-emerald-500 rounded-md' src={logo} alt="" />
             <div className='mt-5 mb-3 text-xl'>
                 
-                <h3>{name} </h3>
+                <h3 className='text-white'>{name} </h3>
 
             </div>
 
@@ -21,7 +21,7 @@ const QuizTopic = ({topic,handleQuiz}) => {
 
                 </div>
                 { <div className='m-1 '>
-                    <ArrowRightIcon className="h-6 w-6 text-blue-500"/>
+                    <ArrowRightIcon className="h-6 w-6 text-blue-600"/>
                 </div> }
             </button>
             
