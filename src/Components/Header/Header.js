@@ -1,18 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css';
+//import './Header.css';
 
 const Header = () => {
     return (
 
-        <nav className='nav-container'>
+        <nav className=' bg-gray-800 rounded-xl'>
             
-            <div className='nav-left-element'>
-                <h3>Quiz Cracker</h3>
-                <div className='nav-right-element'>
-                    <Link to='/'           className='link-items'>Home</Link>
-                    <Link to='/statistics' className='link-items'>Statistics</Link>
-                    <Link to='/blog'       className='link-items'>Blog</Link>
+            <div className=' decoration-white flex justify-between'>
+                <h3 className='text-white m-4'>Quiz Cracker</h3>
+                <div className=' flex'>
+                    <Link to='/'           className=' mx-10 p-5 text-white hover:opacity-50'>Home</Link>
+                    <Link to='/statistics' className=' mx-10 p-5 text-white hover:opacity-50'>Statistics</Link>
+                    <Link to='/blog'       className=' mx-10 p-5 text-white hover:opacity-50'>Blog</Link>
                 </div>
             </div>
 

@@ -5,6 +5,10 @@ import QuizTopic from '../QuizTopic/QuizTopic';
 
 const Home = () => {
     const topics = useLoaderData({});
+
+    const handleQuiz = topics =>{
+        console.log(topics);
+    }
     
     return (
         <div>
@@ -13,7 +17,10 @@ const Home = () => {
                 {
                     topics.data.map(topic => <QuizTopic
                     key={topic.id}
-                    topic={topic}></QuizTopic>)
+                    topic={topic}
+                    handleQuiz={handleQuiz}>
+
+                    </QuizTopic>)
                 }
             </div>
         </div>
