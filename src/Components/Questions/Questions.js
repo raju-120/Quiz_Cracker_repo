@@ -1,10 +1,17 @@
 import React from 'react';
+import QsDetails from '../QsDetails/QsDetails';
 
-const Questions = ({question}) => {
-    const {correctAnswer } = question;
+const Questions = ({quiz}) => {
+    const questions = quiz.questions;
     return (
         <div>
-            <h1>Question {correctAnswer}</h1>
+            {
+                questions.map( qsDetail => <QsDetails
+                key={qsDetail.id}
+                qsDetails={qsDetail}>
+
+                </QsDetails> )
+            }
         </div>
     );
 };
